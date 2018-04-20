@@ -1,0 +1,62 @@
+%-----------------------------------------------------------------------------
+% nomos.sty v0.5. (c) by Juergen Fenn <juergen.fenn@gmx.de>
+% Latest version of the LaTeX Project Public License is applicable. 
+% File may not be modified and redistributed under the same name 
+% without the author's prior consent.
+%-----------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{nomos}[2004/12/03 v0.5 implements legal typesetting]
+% Optionen deklarieren -------------------------------------------------------
+\DeclareOption{nomosheadings}{%
+ \renewcommand{\section}{\@startsection
+    {section}%
+    {0}%
+    {0em}% 
+    {-1.5\baselineskip}% 
+    {0.5\baselineskip}% 
+    {\centering\bfseries\large}}% 
+ \renewcommand{\subsection}{\@startsection
+    {subsection}%
+    {1}%
+    {0em}% 
+    {-\baselineskip}% 
+    {0.5\baselineskip}% 
+    {\centering\bfseries\normalsize}}% 
+ \renewcommand{\subsubsection}{\@startsection
+    {subsubsection}%
+    {2}%
+    {0em}% 
+    {-\baselineskip}% 
+    {0.5\baselineskip}% 
+    {\centering\normalfont\normalsize}}% 
+\renewcommand{\paragraph}{\@startsection
+    {paragraph}%
+    {3}%
+    {0em}% 
+    {-\baselineskip}% 
+    {0.5\baselineskip}% 
+    {\centering\normalfont\itshape}}% 
+\renewcommand{\subparagraph}{\@startsection
+    {subparagraph}%
+    {3}%
+    {0em}% 
+    {-\baselineskip}% 
+    {0.5\baselineskip}% 
+    {\centering\normalfont\small\itshape}}% 
+}
+%-----------------------------------------------------------------------------
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}%
+%-----------------------------------------------------------------------------
+% Optionen ausfuehren --------------------------------------------------------
+\ExecuteOptions{a4paper,german}
+\ProcessOptions
+% Pakete laden ---------------------------------------------------------------
+% Spezielle Befehle ----------------------------------------------------------
+% Spezielle Klassendateibefehle ----------------------------------------------
+% Neue Befehle und Umgebungen ------------------------------------------------
+% Paragraphen ----------------------------------------------------------------
+\newcommand{\sect}[3]{\noindent\textbf{\S\,#1~#2} #3\par\vspace{1em}}
+\newcommand{\subsect}[1]{#1\par}
+%-----------------------------------------------------------------------------
+\endinput
+%-----------------------------------------------------------------------------
