@@ -6,7 +6,7 @@ This is LaTeX package 'nomos' for typsetting legal
 norms. The package consists of these files:
 
 * nomos.sty
-* README-nomos
+* README.md
 * nomos.pdf
 
 ## Installation
