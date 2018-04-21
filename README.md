@@ -28,11 +28,9 @@ applicable to all parts of this package. Please see
 
   http://www.latex-project.org/lppl.txt
 
-For Details.
+for Details.
 
 Keep TeXing! ;-)
 
-Please let me know what you think about the package.
-
-Juergen Fenn, juergen <dot> fenn <at> gmx <dot> de,
+Juergen Fenn, 
 16 December 2004/ 18 April 2018.
