@@ -19,7 +19,7 @@ is done in three steps:
 
 ## Changes
 
- v0.5   2004/012/16  latest version
+ v0.5   2004/12/16  latest version
 
 ## Copying
 
